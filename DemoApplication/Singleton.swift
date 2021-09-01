@@ -7,9 +7,7 @@ class Singleton {
     var userDetail=UserClass()
     var locationGranted: Bool?
     
-    private init() {
-        
-    }
+    private init() {}
     
     func message() {
         print("Singleton Pattern")
