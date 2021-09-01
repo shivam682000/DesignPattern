@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let user = Singleton.shared.requestUser()
+        Singleton.shared.message()
+        print("\(user.fname) is \(user.lname)")
     }
 
 

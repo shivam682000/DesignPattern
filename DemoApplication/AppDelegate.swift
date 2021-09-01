@@ -15,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // using Single instance
+        let user = Singleton.shared.requestUser()
+        user.fname = "Shivam"
+        user.lname = "Kumar"
+        
+        
+        
         return true
     }
 

@@ -16,6 +16,8 @@
 		2A16E24C26DE3D47006CC0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A16E24A26DE3D47006CC0A0 /* LaunchScreen.storyboard */; };
 		2A16E25726DE3D47006CC0A0 /* DemoApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E25626DE3D47006CC0A0 /* DemoApplicationTests.swift */; };
 		2A16E26226DE3D47006CC0A0 /* DemoApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E26126DE3D47006CC0A0 /* DemoApplicationUITests.swift */; };
+		2A16E27026DE4D80006CC0A0 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E26F26DE4D80006CC0A0 /* Singleton.swift */; };
+		2A16E27226DE9B89006CC0A0 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2A16E25D26DE3D47006CC0A0 /* DemoApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A16E26126DE3D47006CC0A0 /* DemoApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApplicationUITests.swift; sourceTree = "<group>"; };
 		2A16E26326DE3D47006CC0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A16E26F26DE4D80006CC0A0 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				2A16E24A26DE3D47006CC0A0 /* LaunchScreen.storyboard */,
 				2A16E24D26DE3D47006CC0A0 /* Info.plist */,
 				2A16E24526DE3D47006CC0A0 /* DemoApplication.xcdatamodeld */,
+				2A16E26F26DE4D80006CC0A0 /* Singleton.swift */,
+				2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */,
 			);
 			path = DemoApplication;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				2A16E24126DE3D47006CC0A0 /* ViewController.swift in Sources */,
 				2A16E24726DE3D47006CC0A0 /* DemoApplication.xcdatamodeld in Sources */,
 				2A16E23D26DE3D47006CC0A0 /* AppDelegate.swift in Sources */,
+				2A16E27226DE9B89006CC0A0 /* FactoryMethod.swift in Sources */,
+				2A16E27026DE4D80006CC0A0 /* Singleton.swift in Sources */,
 				2A16E23F26DE3D47006CC0A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
