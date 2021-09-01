@@ -8,28 +8,32 @@
 import UIKit
 class Burger {
     let customerName : String?
-    let Veggie : Bool?
-    let Mayo : Bool?
-    let Ketchup : Bool?
+    let veggie : Bool?
+    let mayo : Bool?
+    let ketchup : Bool?
     let lettuce : Bool?
-    let Patties : Int?
+    let patties : Int?
     let cook : Cooked?
-    enum Cooked :String{
-        case Normal = "normal"
-        case HOT = "hot"
+    
+    enum Cooked :String {
+        case normal = "normal"
+        case hot = "hot"
     }
-    init(name : String, Veggie : Bool, Mayo : Bool, Ket : Bool,
-         lettuce : Bool, Cook : Cooked, Patties : Int){
+    
+    init(name : String, veggie : Bool, mayo : Bool, ket : Bool,
+         lettuce : Bool, cook : Cooked, patties : Int) {
         self.customerName = name
-        self.Veggie = Veggie
-        self.Mayo = Mayo
-        self.Ketchup = Ket
+        self.veggie = veggie
+        self.mayo = mayo
+        self.ketchup = ket
         self.lettuce = lettuce
-        self.cook = Cook
-        self.Patties = Patties
+        self.cook = cook
+        self.patties = patties
     }
-    func Description(){
-        print("Name is \(self.customerName!) Veggie \(self.Veggie!) Mayo \(self.Mayo!) Ketchup \(self.Ketchup!) lettuce \(self.lettuce!) cook \(self.cook!) patties \(self.Patties!)")
+    
+   
+    func description() {
+        print("Name is \(self.customerName ?? "") Veggie \(self.veggie ?? true) Mayo \(self.mayo ?? true) Ketchup \(self.ketchup ?? true) lettuce \(self.lettuce ?? true) cook \(self.cook ?? Cooked.normal) patties \(self.patties ?? 2)")
     }
 }
 
@@ -38,37 +42,41 @@ class BuilderPattern {
     private var mayo = false
     private var ketchup = true
     private var lettuce = true
-    private var cooked = Burger.Cooked.Normal
+    private var cooked = Burger.Cooked.normal
     private var patties = 2
     
-    func setVeggie(choice : Bool){
+    func setVeggie(choice : Bool) {
         self.vagie = choice
     }
-    func setMayo(choice : Bool){
+    
+    func setMayo(choice : Bool) {
         self.mayo = choice
     }
-    func setKetchup(choice : Bool){
+    
+    func setKetchup(choice : Bool) {
         self.ketchup = choice
     }
-    func setLettuce(choice : Bool){
+    
+    func setLettuce(choice : Bool) {
         self.lettuce = choice
     }
-    func setPatties(choice : Int){
+    
+    func setPatties(choice : Int) {
         self.patties = choice
     }
     
-    func setCooked(choice : Burger.Cooked){
+    func setCooked(choice : Burger.Cooked) {
         self.cooked = choice
     }
+    
     func build(name : String) -> Burger {
         return Burger(name : name,
-                      Veggie : self.vagie,
-                      Mayo : self.mayo,
-                      Ket : self.ketchup,
+                      veggie : self.vagie,
+                      mayo : self.mayo,
+                      ket : self.ketchup,
                       lettuce : self.lettuce,
-                      Cook : self.cooked,
-                      Patties : self.patties
-                      )
+                      cook : self.cooked,
+                      patties : self.patties
+                )
     }
-
 }

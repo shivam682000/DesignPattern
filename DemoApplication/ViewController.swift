@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         object.setMayo(choice: false)
         object.setCooked(choice: Burger.Cooked.HOT)
         let object2 = object.build(name: name1)
-        object2.Description()
+        object2.description()
         
     }
 

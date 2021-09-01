@@ -9,28 +9,25 @@ import UIKit
 protocol StudentInfo {
     var name : String {get}
     var marks : Int {get}
-    
 }
 
 class Topper: StudentInfo {
     var name : String = "rahul"
     var marks : Int = 90
-    
 }
 
 class Medium: StudentInfo {
     var name : String = "Shivam"
     var marks : Int = 70
-    
 }
+
 class Failure: StudentInfo {
     var name : String = "Xyz"
     var marks : Int = 30
-    
 }
 
-class StudentReport{
-    func Report(marks : Int) -> String{
+class StudentReport {
+    func report (marks : Int) -> String {
         var name : StudentInfo?
         switch marks {
         case 80...100:

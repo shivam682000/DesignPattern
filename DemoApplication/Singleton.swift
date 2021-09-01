@@ -2,23 +2,25 @@
 import UIKit
 // Singleton Pattern
 // using it in AppDelegate and ViewController
-class Singleton{
+class Singleton {
     static let shared = Singleton()
-    var userDetail=userClass()
+    var userDetail=UserClass()
     var locationGranted: Bool?
-    private init(){}
     
-    func message(){
+    private init() {
+        
+    }
+    
+    func message() {
         print("Singleton Pattern")
     }
     
-    func requestUser() -> userClass{
+    func requestUser() -> UserClass {
         return self.userDetail
     }
-    
-
 }
-class userClass{
+
+class UserClass{
     var fname = ""
     var lname = " "
 }
