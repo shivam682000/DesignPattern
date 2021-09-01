@@ -18,6 +18,7 @@
 		2A16E26226DE3D47006CC0A0 /* DemoApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E26126DE3D47006CC0A0 /* DemoApplicationUITests.swift */; };
 		2A16E27026DE4D80006CC0A0 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E26F26DE4D80006CC0A0 /* Singleton.swift */; };
 		2A16E27226DE9B89006CC0A0 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */; };
+		2A16E27426DF5591006CC0A0 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E27326DF5591006CC0A0 /* BuilderPattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2A16E26326DE3D47006CC0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A16E26F26DE4D80006CC0A0 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		2A16E27326DF5591006CC0A0 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				2A16E24526DE3D47006CC0A0 /* DemoApplication.xcdatamodeld */,
 				2A16E26F26DE4D80006CC0A0 /* Singleton.swift */,
 				2A16E27126DE9B89006CC0A0 /* FactoryMethod.swift */,
+				2A16E27326DF5591006CC0A0 /* BuilderPattern.swift */,
 			);
 			path = DemoApplication;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2A16E27226DE9B89006CC0A0 /* FactoryMethod.swift in Sources */,
 				2A16E27026DE4D80006CC0A0 /* Singleton.swift in Sources */,
 				2A16E23F26DE3D47006CC0A0 /* SceneDelegate.swift in Sources */,
+				2A16E27426DF5591006CC0A0 /* BuilderPattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
